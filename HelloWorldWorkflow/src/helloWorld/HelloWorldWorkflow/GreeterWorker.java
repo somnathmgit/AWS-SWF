@@ -12,8 +12,8 @@ public class GreeterWorker {
 	public static void main(String[] args) throws Exception {
 		ClientConfiguration config = new ClientConfiguration().withSocketTimeout(70 * 1000);
 
-		String swfAccessId = "AKIAJJKH3L7AJTWLCMFQ";
-		String swfSecretKey = "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";
+		String swfAccessId = "access-key";
+		String swfSecretKey = "secret-key";
 		AWSCredentials awsCredentials = new BasicAWSCredentials(swfAccessId,swfSecretKey);
 
 		AmazonSimpleWorkflow service = new AmazonSimpleWorkflowClient(awsCredentials, config);
